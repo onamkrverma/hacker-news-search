@@ -39,7 +39,7 @@ const Home = () => {
     setIsLoading(true);
     try {
       const res = await fetch(
-        `http://hn.algolia.com/api/v1/${
+        `https://hn.algolia.com/api/v1/${
           filter.sortBy === "date" ? "search_by_date" : "search"
         }?query=${query}&tags=${filter.tag}&page=${
           filter.page

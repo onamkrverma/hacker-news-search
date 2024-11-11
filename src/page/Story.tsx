@@ -22,7 +22,7 @@ const Story = () => {
   const getStory = async () => {
     setIsLoading(true);
     try {
-      const res = await fetch(`http://hn.algolia.com/api/v1/items/${itemId}`);
+      const res = await fetch(`https://hn.algolia.com/api/v1/items/${itemId}`);
       const data = await res.json();
       setStoryInfo(data);
     } catch (error) {

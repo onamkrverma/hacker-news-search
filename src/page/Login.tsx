@@ -18,7 +18,7 @@ const Login = () => {
   const handleLogin = (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     localStorage.setItem("userinfo", JSON.stringify({ username, password }));
-    navigation("/", { replace: true });
+    navigation("/");
   };
 
   return (
